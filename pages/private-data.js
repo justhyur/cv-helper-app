@@ -71,7 +71,7 @@ export default function PrivateData() {
                         <h3>{capitalize(section.name)}</h3>
                         <div className="input">
                           <input type={section.type} placeholder={`Insert ${section.name}...`} value={section.value} onChange={(e)=>{
-                            setLocalData(curr => {
+                            setPrivateData(curr => {
                               const newData = [...curr];
                               newData[d].form[s].value = e.target.value;
                               return newData;
