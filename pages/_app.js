@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
   useEffect(()=>{
-    const API_URL = process.env.NEXT_TRACKER_API_URL;
+    const API_URL = process.env.NEXT_PUBLIC_TRACKER_URL;
     async function establishConnection(){
         try {
             const fp = await FingerprintJS.load();
